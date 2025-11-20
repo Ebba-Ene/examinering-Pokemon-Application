@@ -26,7 +26,7 @@ const Pokemon = (props) => {
           <img src={pokemonInfo.sprites.front_default} alt={`Sprite of ${pokemonInfo.name}`} />
           <p><strong>Typ: </strong>{pokemonInfo.types[0].type.name}</p>
           {pokemonInfo.types[1] && 
-            <p><strong>Typ: </strong>{pokemonInfo.types[1].type.name}</p>
+            <p><strong>Typ 2: </strong>{pokemonInfo.types[1].type.name}</p>
           }
           <p><strong>Vikt: </strong>{pokemonInfo.height}</p>
           <p><strong>Längd: </strong>{pokemonInfo.weight}</p>
