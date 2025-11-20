@@ -23,7 +23,14 @@ const Pokemon = (props) => {
       {pokemonInfo && 
         <div>
           <h1>{pokemonInfo.name}</h1>
-          <p>Base experience: {pokemonInfo.base_experience}</p>
+          <img src={pokemonInfo.sprites.front_default} alt={`Sprite of ${pokemonInfo.name}`} />
+          <p><strong>Typ: </strong>{pokemonInfo.types[0].type.name}</p>
+          {pokemonInfo.types[1] && 
+            <p><strong>Typ: </strong>{pokemonInfo.types[1].type.name}</p>
+          }
+          <p><strong>Vikt: </strong>{pokemonInfo.height}</p>
+          <p><strong>Längd: </strong>{pokemonInfo.weight}</p>
+
         </div>
       }
     </div>
