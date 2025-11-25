@@ -4,8 +4,6 @@ const Pokemon = (props) => {
 
   const [pokemonInfo, setPokemonInfo] = useState(null)
 
-  console.log(props.link)
-
     useEffect (() => {
       const getPokemonInfo = async () =>{
         let response = await fetch(props.link)
