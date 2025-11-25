@@ -28,8 +28,8 @@ const Pokemon = (props) => {
           {pokemonInfo.types[1] && 
             <p><strong>Typ 2: </strong>{pokemonInfo.types[1].type.name}</p>
           }
-          <p><strong>Vikt: </strong>{pokemonInfo.height}</p>
-          <p><strong>Längd: </strong>{pokemonInfo.weight}</p>
+          <p><strong>Vikt: </strong>{pokemonInfo.height} kg</p>
+          <p><strong>Längd: </strong>{pokemonInfo.weight} cm</p>
 
         </div>
       }
